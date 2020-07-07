@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  tinyapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "4050:80"
+
+  tinyapi2:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "4052:80"

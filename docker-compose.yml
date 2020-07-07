@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  tinyapi:
+    image: ${DOCKER_REGISTRY-}tinyapi
+    build:
+      context: .
+      dockerfile: TinyApi/Dockerfile
+
+  tinyapi2:
+    image: tinyapi:latest
